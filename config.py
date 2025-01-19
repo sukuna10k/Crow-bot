@@ -6,8 +6,8 @@ from logging.handlers import RotatingFileHandler
 
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "7783135016:AAEDA3NoMMtHpgjf5CroaQAHMkP-VC859k0")
-API_ID = int(os.environ.get("API_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
+API_ID = int(os.environ.get("API_ID", "24817837"))
+API_HASH = os.environ.get("API_HASH", "acd9f0cc6beb08ce59383cf250052686")
 
 
 OWNER_ID = int(os.environ.get("OWNER_ID", "7428552084"))
@@ -58,7 +58,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 
 USER_REPLY_TEXT = "❌Ne m'envoyer pas directement de message.\n\nsur @anime_crow & @AntiFlix_A🔥" 
 
-START_MSG = os.environ.get("START_MESSAGE", "**Salut** {mention}\n\n» Bienvenue dans ⚡️⚡️**__Anti-Crow__**⚡️⚡\n\n» Je suis Marsh Mello - Un bot avancé pour fournir des fichiers anime et films.\n\n» Vous devez rejoindre mes chaînes @Anime_Crow et @AntiFlix_A  pour m'utiliser. \n\n» Profitez de votre expérience de visionnage d'animes. et series.")
+START_MSG = os.environ.get("START_MESSAGE", "**Salut** {mention}\n\n» Bienvenue dans ⚡️⚡️**__Anti-Crow__**⚡️⚡\n\n» Je suis Marsh Mello - Un bot avancé pour fournir des fichiers anime et films.\n\n» Vous devez rejoindre mes chaînes @Anime_Crow et @AntiFlix_A  pour m'utiliser.\n\n» Profitez de votre expérience de visionnage d'animes. et series.")
 
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Salut {mention}\n\n<b>Veuillez rejoindre mon canal mon canal pour pouvoir récupérer votre fichier</b>")
 
