@@ -58,9 +58,9 @@ BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 
 USER_REPLY_TEXT = "❌Ne m'envoyer pas directement de message.\n\nsur @anime_crow & @AntiFlix_A🔥" 
 
-START_MSG = os.environ.get("START_MESSAGE", "Hello {mention}\n\nI Can Store Private Files In Specified Channel And Other Users Can Access It From Special Link.")
+START_MSG = os.environ.get("START_MESSAGE", "**Salut** {mention}\n\n» Bienvenue dans ⚡️⚡️**__Anti-Crow__**⚡️⚡\n\n» Je suis Marsh Mello - Un bot avancé pour fournir des fichiers anime et films.\n\n» Vous devez rejoindre mes chaînes @Anime_Crow et @AntiFlix_A  pour m'utiliser. \n\n» Profitez de votre expérience de visionnage d'animes. et series.")
 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You Need To Join In My Channel/Group To Use Me\n\nKindly Please Join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Salut {mention}\n\n<b>Veuillez rejoindre mon canal mon canal pour pouvoir récupérer votre fichier</b>")
 
 
 
