@@ -53,11 +53,11 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        temp_msg = await message.reply("Please Wait...")
+        temp_msg = await message.reply("😁Veuillez patienter...")
         try:
             messages = await get_messages(client, ids)
         except:
-            await message.reply_text("Something Went Wrong..!")
+            await message.reply_text("Quelque chose à mal tourné contact : @kingcey..!")
             return
         await temp_msg.delete()
     
@@ -135,14 +135,17 @@ async def start_command(client: Client, message: Message):
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(text="Join Channel", url=client.invitelink)
+            InlineKeyboardButton(text="AntiFlix", url=client.invitelink)
+    ]
+        [
+            InlineKeyboardButton(text="Kingcey", url="https://t.me/Otakukingcey1"
         ]
     ]
     try:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = 'Ressayer',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
