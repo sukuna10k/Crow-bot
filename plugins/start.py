@@ -141,8 +141,8 @@ async def not_joined(client: Client, message: Message):
         InlineKeyboardButton(text="Kingcey", url="https://t.me/Otakukingcey1")
     ]
 ]
-    try:
-        buttons.append(
+try:
+    buttons.append(
         [
             InlineKeyboardButton(
                 text='Ressayer',
