@@ -142,7 +142,7 @@ async def not_joined(client: Client, message: Message):
     ]
 ]
     try:
-    buttons.append(
+        buttons.append(
         [
             InlineKeyboardButton(
                 text='Ressayer',
