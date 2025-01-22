@@ -134,36 +134,37 @@ async def start_command(client: Client, message: Message):
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
     buttons = [
-    [
-        InlineKeyboardButton(text="AntiFlix", url=client.invitelink)
-    ],
-    [
-        InlineKeyboardButton(text="Kingcey", url="https://t.me/Otakukingcey1")
-    ]
-]
-try:
-    buttons.append(
         [
-            InlineKeyboardButton(
-                text='Ressayer',
-                url=f"https://t.me/{client.username}?start={message.command[1]}"
-            )
+            InlineKeyboardButton(text="AntiFlix", url=client.invitelink)
+        ],
+        [
+            InlineKeyboardButton(text="Kingcey", url="https://t.me/Otakukingcey1")
         ]
-    )
-except IndexError:
-    pass
+    ]
+    try:
+        buttons.append(
+            [
+                InlineKeyboardButton(
+                    text='Ressayer',
+                    url=f"https://t.me/{client.username}?start={message.command[1]}"
+                )
+            ]
+        )
+    except IndexError:
+        pass
 
+    # `await` est maintenant correctement placé dans le corps de la fonction
     await message.reply(
-        text = FORCE_MSG.format(
-                first = message.from_user.first_name,
-                last = message.from_user.last_name,
-                username = None if not message.from_user.username else '@' + message.from_user.username,
-                mention = message.from_user.mention,
-                id = message.from_user.id
-            ),
-        reply_markup = InlineKeyboardMarkup(buttons),
-        quote = True,
-        disable_web_page_preview = True
+        text=FORCE_MSG.format(
+            first=message.from_user.first_name,
+            last=message.from_user.last_name,
+            username=None if not message.from_user.username else '@' + message.from_user.username,
+            mention=message.from_user.mention,
+            id=message.from_user.id
+        ),
+        reply_markup=InlineKeyboardMarkup(buttons),
+        quote=True,
+        disable_web_page_preview=True
     )
 
 
